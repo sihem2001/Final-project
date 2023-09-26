@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Libre Baskerville", serif;
+}
+.header {
+  min-height: 600px;
+  width: 1250px;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(images/liana-mikah-HstwCJX0jT4-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.logo {
+  height: 30px;
+  width: 40px;
+}
+nav {
+  display: flex;
+  padding: 16px 45px;
+  justify-content: space-between;
+  align-items: center;
+
+  position: sticky;
+}
+nav h1 {
+  font-size: 25px;
+  color: white;
+  transition: 1s;
+}
+nav h1 span:hover {
+  font-size: 28px;
+  cursor: pointer;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+  color: white;
+}
+.nav-links ul li a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0px;
+  height: 2px;
+  background: #f2bed1;
+  display: block;
+  margin: auto;
+  transition: 1s;
+}
+.nav-links ul li:hover::after {
+  width: 40px;
+}
+/* text heder css */
+.text-header {
+  width: 900px;
+  color: #f2bed1;
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding-top: 0px;
+}
+.text-header h1 {
+  padding-bottom: 15px;
+  font-size: 40px;
+}
+.text-header p {
+  color: #f8e8ee;
+
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: transparent;
+  border: 1px solid #fdcedf;
+
+  padding: 12px 34px;
+  font-size: 13px;
+
+  cursor: pointer;
+}
+.btn-primary:hover {
+  border: 1px solid rgb(238, 174, 202);
+
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+nav .fa-times,
+.fa-bars {
+  display: none;
+}
+@media (max-width: 700px) {
+  .header {
+    height: 50px;
+    width: 900px;
+  }
+  .text-header {
+    width: 500px;
+  }
+
+  .text-header h1 {
+    font-size: 20px;
+  }
+  .nav-links ul li {
+    display: block;
+    font-size: 45px;
+  }
+  .nav-links ul li a {
+    color: #fba1b7;
+    font-weight: bolder;
+  }
+  .nav-links {
+    position: absolute;
+    background: #fff;
+    height: 600px;
+    width: 180px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+  }
+  nav .fa-times,
+  .fa-bars {
+    display: block;
+    color: #fba1b7;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
+}

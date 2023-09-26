@@ -1,0 +1,83 @@
+.team {
+  background-color: #fff;
+}
+.team h2 {
+  text-align: center;
+  color: #f2bed1;
+  padding: 20px 0px 20px 0px;
+  font-size: 30px;
+}
+.team-persons {
+  height: 400px;
+  overflow: hidden;
+  /* mor css */
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 350px;
+  height: 350px;
+}
+.container:hover > .card1 {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+.card1 {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  /* mor css */
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+}
+.front1,
+.front2,
+.front3,
+.front4,
+.back {
+  width: 300px;
+  height: 300px;
+
+  border-radius: 2px;
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
+  position: absolute;
+  /* mor css */
+  backface-visibility: hidden;
+}
+.front1 {
+  background-image: url(team/team3.jpg);
+  background-size: cover;
+}
+.front2 {
+  background-image: url(team/team5.jpg);
+  background-size: cover;
+}
+.front3 {
+  background-image: url(team/team1.jpg);
+  background-size: cover;
+}
+.front4 {
+  background-image: url(team/team2.jpg);
+  background-size: cover;
+}
+.back {
+  background-color: #e6739f;
+  color: white;
+  transform: rotateY(180deg);
+  padding-left: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+#Team {
+  background-color: #f2bed1;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 50px;
+}

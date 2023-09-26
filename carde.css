@@ -1,0 +1,44 @@
+.services {
+  background-color: #f9f5f6;
+  min-height: 540px;
+  width: 1250px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.carde {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.card {
+  width: 260px;
+  transition: 0.5s;
+  text-align: center;
+}
+.card h5 {
+  color: #e6739f;
+  font-size:14px;
+  
+}
+.card-text{
+  font-size: 12px;
+}
+
+.card:hover {
+  transform: scale(1.2);
+  z-index: 2;
+}
+.card-img-top {
+  height: 250px;
+  width: 259px;
+}
+.services h2 {
+  padding: 20px 0px 20px 0px;
+
+  text-align: center;
+  color: #f2bed1;
+
+  font-size:30px;
+}

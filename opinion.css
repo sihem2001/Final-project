@@ -1,0 +1,35 @@
+.client-opinion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 550px;
+  padding-top: 50px;
+}
+.opinion-title h3 {
+  font-weight: bold;
+  color: #f2bed1;
+}
+.opinions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.opinion1,
+.opinion2,
+.opinion3 p {
+  font-size: 15px;
+  width: 300px;
+  color: black;
+}
+
+.opinion3 p span {
+  color: blue;
+}
+.opinion1 p span {
+  color: blue;
+}
+.opinion2 p span {
+  color: blue;
+}
