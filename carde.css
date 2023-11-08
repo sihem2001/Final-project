@@ -1,5 +1,4 @@
 .services {
-  background-color: #f9f5f6;
   min-height: 540px;
   width: 1250px;
   background-position: center;
@@ -19,10 +18,9 @@
 }
 .card h5 {
   color: #e6739f;
-  font-size:14px;
-  
+  font-size: 14px;
 }
-.card-text{
+.card-text {
   font-size: 12px;
 }
 
@@ -40,5 +38,5 @@
   text-align: center;
   color: #f2bed1;
 
-  font-size:30px;
+  font-size: 30px;
 }

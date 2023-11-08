@@ -24,7 +24,7 @@
 }
 
 .button-about {
-  color:#E6739F;
+  color: #e6739f;
   padding: 5px 5px;
   background-color: transparent;
   border: 1px solid #f2bed1;
@@ -32,7 +32,6 @@
   border-radius: 5px;
 
   transition: background-color 1s;
-
 }
 
 .button-about:hover {

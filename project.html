@@ -37,11 +37,17 @@
       integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="carde.css" />
     <link rel="stylesheet" href="about.css" />
     <link rel="stylesheet" href="team.css" />
-    <link rel="stylesheet" href="opinion.css">
+    <link rel="stylesheet" href="opinion.css" />
+    <link rel="stylesheet" href="footer.css" />
   </head>
   <body>
     <section class="header">
@@ -60,8 +66,13 @@
             <li><a href="#About">About</a></li>
             <li><a href="#Team">Team</a></li>
             <li><a href="#Services">Services</a></li>
-            <li><a href="#products">products</a></li>
-            <li><a href="#consultation">consultation</a></li>
+            <li>
+              <a
+                href="file:///C:/Users/admin/Desktop/finalproject/products1/products1.html"
+                target="_blank"
+                >products</a
+              >
+            </li>
           </ul>
         </div>
         <i class="fa fa-bars" aria-hidden="true"></i>
@@ -95,11 +106,13 @@
           purchase of their homes. All properties feature world-class standards
           and affordable property rates designed to fit every lifestyle.
         </p>
-        <button class="button-about">Get in touch</button>
+        <button class="button-about" onclick="scrollToFooter('footer-section')">
+          Get in touch
+        </button>
       </div>
     </div>
     <!-- section about team members -->
-    <section class="team">
+    <section class="team" id="Team">
       <h2>Meet our team</h2>
       <div class="team-persons">
         <div class="container">
@@ -185,31 +198,80 @@
         <!-- opinion1 -->
         <div class="opinion1">
           <p>
-            My real estate agent was with me and my wife every step of the way.
-            She kept us updated throughout the process. <br>
+            AlgeriaHome agent was with me and my wife every step of the way. She
+            kept us updated throughout the process. <br />
             <span>Jonah Granger</span>
           </p>
-          
         </div>
         <!-- opinion2 -->
         <div class="opinion2">
           <p>
-            I always rely on Qaiba Homes to take care of my real estate needs,
-            no matter the location, square footage, or budget. <br>
+            I always rely on AlgeriaHome to take care of my real estate needs,
+            no matter the location, square footage, or budget. <br />
             <span>Mimi Bristow</span>
           </p>
-          
         </div>
         <!-- opinion3 -->
         <div class="opinion3">
           <p>
-            Our agent went above and beyond what was expected of her. We're
-            thankful for her excellent service and assistance. <br>
+            AlgeriaHome agent went above and beyond what was expected of her.
+            We're thankful for her excellent service and assistance. <br />
             <span>Gina Laing </span>
           </p>
-          
         </div>
       </div>
     </section>
+    <!-- last section -->
+    <footer id="footer-section">
+      <div class="footer-content">
+        <h3>We'd love to work with you. Call us now.</h3>
+        <ul class="socials">
+          <li>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-linkedin-square"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-phone"></i></a>
+          </li>
+        </ul>
+        <p>
+          <strong>Adress :</strong>65, Boulevard Mohamed V, Algiers, Algiers
+          16002 ·
+        </p>
+        <p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25569.236890908564!2d3.0415312918002813!3d36.766858224380115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fb2f877796ffd%3A0x62ac3794efff79ca!2sAlger%20Ctre!5e0!3m2!1sfr!2sdz!4v1696774205475!5m2!1sfr!2sdz"
+            width="500"
+            height="200"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </p>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          copyright &copy;2023 codeOpacity. designed by <span>nethunt</span>
+        </p>
+      </div>
+    </footer>
+    <script>
+      function scrollToFooter(footerId) {
+        const section = document.getElementById(footerId);
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
   </body>
 </html>

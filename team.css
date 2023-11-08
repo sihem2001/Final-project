@@ -1,5 +1,5 @@
 .team {
-  background-color: #fff;
+  background-color: #f9f5f6;
 }
 .team h2 {
   text-align: center;
@@ -43,7 +43,6 @@
   box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5);
   position: absolute;
   /* mor css */
-  backface-visibility: hidden;
 }
 .front1 {
   background-image: url(team/team3.jpg);
@@ -64,20 +63,11 @@
 .back {
   background-color: #e6739f;
   color: white;
+  backface-visibility: hidden;
   transform: rotateY(180deg);
   padding-left: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 30px;
-}
-#Team {
-  background-color: #f2bed1;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-
-  padding-top: 50px;
 }

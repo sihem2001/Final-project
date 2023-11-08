@@ -1,0 +1,88 @@
+/* Css of - informative part about my products that i have added */
+.container {
+  display: flex;
+  flex-direction: row;
+
+  /* border: 1px solid black; */
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+/* the empty div to add products */
+#root {
+  width: 0%;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 10px;
+
+  /* to not the elements get bigger with the side bar */
+  max-height: 1000px;
+}
+.sideBar {
+  background-color: #eee;
+  border-radius: 5px;
+  margin-left: 790px;
+  width: 50%;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+}
+/* head of the side Bar "My Cart" */
+.head {
+  background-color: #f1d4d4;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: black;
+}
+.head p {
+  padding-top: 10px;
+  font-size: medium;
+}
+.foot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px solid #333;
+  margin: 20px 0px;
+}
+.foot h3,
+h2 {
+  font-size: 15px;
+}
+.fa-trash {
+  color: #f1d4d4;
+}
+.fa-trash:hover {
+  cursor: pointer;
+  color: #e6739f;
+}
+
+@media screen and(max-height: 909px), (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 700px;
+    align-items: center;
+    padding-right: 400px;
+  }
+  .sideBar {
+    width: 900px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .head p {
+    padding-top: 10px;
+    font-size: 60px;
+  }
+  .foot {
+    border-top: 2px solid #333;
+    margin: 20px 0px;
+  }
+  .foot h3,
+  h2 {
+    font-size: 60px;
+  }
+  #cartItems {
+    font-size: 60px;
+  }
+}
